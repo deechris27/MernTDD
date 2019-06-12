@@ -2,7 +2,7 @@
   "name": "testing-workshop",
   "version": "2.0.0",
   "repository": "https://github.com/deechris27/MernTDD.git",
-  "author": "Deepak D (http://deechris27.com/)",
+  "author": "Deepak D (http://deechris27.tumblr.com/)",
   "license": "MIT",
   "scripts": {
     "add-contributor": "all-contributors add",
