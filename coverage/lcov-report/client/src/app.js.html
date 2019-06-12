@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for client/src/app.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\index.html">All files</a> / <a href="index.html">client/src</a> app.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/27</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/27</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import React from 'react'</span>
+<span class="cstat-no" title="statement not covered" >import styled from 'react-emotion'</span>
+<span class="cstat-no" title="statement not covered" >import {BrowserRouter as Router, Route, Link, Redirect} from 'react-router-dom'</span>
+<span class="cstat-no" title="statement not covered" >import User from './components/user'</span>
+<span class="cstat-no" title="statement not covered" >import Login from './components/login'</span>
+<span class="cstat-no" title="statement not covered" >import Loading from './components/loading'</span>
+<span class="cstat-no" title="statement not covered" >import Home from './screens/home'</span>
+<span class="cstat-no" title="statement not covered" >import Editor from './screens/editor'</span>
+<span class="cstat-no" title="statement not covered" >import githubLogo from './assets/github.svg'</span>
+<span class="cstat-no" title="statement not covered" >import twitterLogo from './assets/twitter.svg'</span>
+&nbsp;
+const Header = <span class="cstat-no" title="statement not covered" >styled('div')({</span>
+  display: 'flex',
+  flexWrap: 'wrap',
+  alignItems: 'center',
+  justifyContent: 'center',
+  margin: '20px 0px',
+})
+const TitleContainer = <span class="cstat-no" title="statement not covered" >styled('div')({</span>
+  display: 'flex',
+&nbsp;
+  '@media only screen and (max-width: 819px)': {
+    order: 0,
+    width: '100%',
+  },
+&nbsp;
+  '&amp; &gt; div': {
+    borderRadius: '50px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    background: 'white',
+    textAlign: 'center',
+    padding: '30px 50px',
+    boxShadow: 'var(--shadow)',
+  },
+})
+&nbsp;
+const Title = <span class="cstat-no" title="statement not covered" >styled('h1')({</span>
+  color: 'var(--green)',
+  fontSize: 50,
+  lineHeight: '40px',
+  textTransform: 'upperase',
+})
+&nbsp;
+const SecondaryTitle = <span class="cstat-no" title="statement not covered" >styled('span')({</span>
+  color: 'var(--black)',
+})
+&nbsp;
+const Inspired = <span class="cstat-no" title="statement not covered" >styled('small')({</span>
+  transition: '0.5s',
+&nbsp;
+  ':hover': {
+    color: 'var(--green)',
+  },
+})
+const SocialLogo = <span class="cstat-no" title="statement not covered" >styled('img')({</span>
+  width: 55,
+  background: 'white',
+  boxShadow: 'var(--shadow)',
+  borderRadius: 20,
+  padding: 15,
+  marginRight: 15,
+  cursor: 'pointer',
+  transition: '0.5s',
+&nbsp;
+  ':hover': {
+    boxShadow: 'var(--shadowHover)',
+  },
+})
+const UserBtnsContainer = <span class="cstat-no" title="statement not covered" >styled('div')({</span>
+  width: '25%',
+  display: 'flex',
+  justifyContent: 'center',
+&nbsp;
+  '@media only screen and (max-width: 819px)': {
+    order: 1,
+    marginTop: 10,
+    flex: 1,
+  },
+})
+const UserBtn = <span class="cstat-no" title="statement not covered" >styled('span')({</span>
+  background: 'white',
+  boxShadow: 'var(--shadow)',
+  borderRadius: 15,
+  padding: 15,
+  marginLeft: 15,
+  cursor: 'pointer',
+  transition: '0.5s',
+&nbsp;
+  ':hover': {
+    boxShadow: 'var(--shadowHover)',
+  },
+})
+&nbsp;
+const NewPostBtn = <span class="cstat-no" title="statement not covered" >styled('span')({</span>
+  background: 'var(--green)',
+  boxShadow: 'var(--shadow)',
+  color: 'white',
+  fontSize: 40,
+  borderRadius: 15,
+  padding: 15,
+  lineHeight: 0.5,
+  transition: '0.5s',
+  cursor: 'pointer',
+  position: 'fixed',
+  bottom: 10,
+  right: 10,
+&nbsp;
+  ':hover': {
+    boxShadow: 'var(--shadowHover)',
+  },
+})
+&nbsp;
+const SocialButton = <span class="cstat-no" title="statement not covered" >styled('a')({</span>
+  border: 'none',
+  backgroundColor: 'transparent',
+  outline: 'none',
+})
+&nbsp;
+const SocialMedia = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =&gt; (</span></span>
+<span class="cstat-no" title="statement not covered" >  &lt;UserBtnsContainer&gt;</span>
+    &lt;SocialButton href="https://twitter.com/deechris27"&gt;
+      &lt;SocialLogo src={twitterLogo} /&gt;
+    &lt;/SocialButton&gt;
+    &lt;SocialButton href="https://github.com/deechris27/testing-workshop"&gt;
+      &lt;SocialLogo src={githubLogo} /&gt;
+    &lt;/SocialButton&gt;
+  &lt;/UserBtnsContainer&gt;
+)
+&nbsp;
+function <span class="fstat-no" title="function not covered" >App() {</span>
+<span class="cstat-no" title="statement not covered" >  return (</span>
+    &lt;User&gt;
+      {<span class="fstat-no" title="function not covered" >({</span>user, error, pending, login, logout, register}) =&gt;
+<span class="cstat-no" title="statement not covered" >        pending ? (</span>
+          &lt;Loading /&gt;
+        ) : (
+          &lt;Router&gt;
+            &lt;div&gt;
+              {error ? (
+                &lt;pre&gt;{JSON.stringify(error.response, null, 2)}&lt;/pre&gt;
+              ) : null}
+              &lt;Header&gt;
+                &lt;SocialMedia /&gt;
+                &lt;TitleContainer&gt;
+                  &lt;div&gt;
+                    &lt;Title&gt;
+                      &lt;Link to="/"&gt;
+                        Today&lt;br /&gt;
+                        &lt;SecondaryTitle&gt;I Learned&lt;/SecondaryTitle&gt;
+                      &lt;/Link&gt;
+                    &lt;/Title&gt;
+                    &lt;Inspired&gt;
+                      Inspired by{' '}
+                      &lt;a href="https://til.hashrocket.com/"&gt;
+                        til.hashrocket.com
+                      &lt;/a&gt;
+                    &lt;/Inspired&gt;
+                  &lt;/div&gt;
+                &lt;/TitleContainer&gt;
+                &lt;UserBtnsContainer&gt;
+                  {user ? (
+                    &lt;div&gt;
+                      &lt;UserBtn data-testid="username-display"&gt;
+                        {user.username.split('@')[0]}
+                      &lt;/UserBtn&gt;
+                      &lt;UserBtn onClick={logout}&gt;Logout&lt;/UserBtn&gt;
+                      &lt;NewPostBtn&gt;
+                        &lt;Link to="/editor"&gt;
+                          &lt;span&gt;+&lt;/span&gt;
+                        &lt;/Link&gt;
+                      &lt;/NewPostBtn&gt;
+                    &lt;/div&gt;
+                  ) : (
+                    &lt;div&gt;
+                      &lt;Link to="/login"&gt;
+                        &lt;UserBtn&gt;Login&lt;/UserBtn&gt;
+                      &lt;/Link&gt;
+                      &lt;Link to="/register"&gt;
+                        &lt;UserBtn&gt;Register&lt;/UserBtn&gt;
+                      &lt;/Link&gt;
+                    &lt;/div&gt;
+                  )}
+                &lt;/UserBtnsContainer&gt;
+              &lt;/Header&gt;
+&nbsp;
+              &lt;Route exact path="/" component={Home} /&gt;
+&nbsp;
+              {user ? (
+                &lt;Route
+                  path="/editor/:postId?"
+                  render={<span class="fstat-no" title="function not covered" >props =&gt; <span class="cstat-no" title="statement not covered" ></span>&lt;Editor user={user} {...props} /&gt;}</span>
+                /&gt;
+              ) : null}
+              &lt;React.Fragment&gt;
+                &lt;Route
+                  path="/login"
+                  render={<span class="fstat-no" title="function not covered" >() =&gt;</span>
+<span class="cstat-no" title="statement not covered" >                    user ? &lt;Redirect to="/" /&gt; : &lt;Login onSubmit={login} /&gt;</span>
+                  }
+                /&gt;
+                &lt;Route
+                  path="/register"
+                  render={<span class="fstat-no" title="function not covered" >() =&gt;</span>
+<span class="cstat-no" title="statement not covered" >                    user ? &lt;Redirect to="/" /&gt; : &lt;Login onSubmit={register} /&gt;</span>
+                  }
+                /&gt;
+              &lt;/React.Fragment&gt;
+            &lt;/div&gt;
+          &lt;/Router&gt;
+        )
+      }
+    &lt;/User&gt;
+  )
+}
+&nbsp;
+export default App
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun May 26 2019 00:57:32 GMT+0530 (India Standard Time)
+</div>
+</div>
+<script src="..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\sorter.js"></script>
+</body>
+</html>
